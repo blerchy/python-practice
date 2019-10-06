@@ -10,6 +10,11 @@ def problem1(A, k):
 
     # your solution here
 
+    for i in range(0, len(A)):
+        for j in range(i-1, -1, -1):
+            if (A[i] + A[j] == k):
+                return True
+
     return False
 
 if __name__ == "__main__":
